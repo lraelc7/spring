@@ -9,9 +9,9 @@ import org.springframework.stereotype.Repository;
 public class StudentDao {
     @Autowired
     HibernateTemplate hibernateTemplate;
-    public StudentEntity get(int id){
+    public void get(int id){
         StudentEntity studentEntity = hibernateTemplate.get(StudentEntity.class, id);
-          return studentEntity;
+
 
     }
 }
